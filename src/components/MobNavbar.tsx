@@ -1,7 +1,8 @@
 import React from "react";
 
 import { FiHeart } from "react-icons/fi";
-import { HiOutlineShoppingBag } from "react-icons/hi";
+import { BiUser } from "react-icons/bi";
+import { BsSearch } from "react-icons/bs";
 import { IoMenuOutline } from "react-icons/io5";
 import { AiOutlineHome, AiOutlineAppstore } from "react-icons/ai";
 
@@ -9,24 +10,19 @@ const MobNavbar = () => {
   return (
     <div className="lg:hidden fixed bottom-0 w-full bg-white left-[50%] -translate-x-[50%] max-w-[500px] mob_navbar px-8">
       <div className="flex justify-between text-[28px] py-2">
-        <IoMenuOutline />
+      <AiOutlineHome className="mr-2 text-gray-400" size={20}/>
+        
         <div className="relative">
-          <HiOutlineShoppingBag />
-          <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
-            0
-          </div>
+        <BsSearch className="mr-2 text-gray-400" size={20} />
         </div>
 
-        <AiOutlineHome />
+        <IoMenuOutline className="mr-2 text-gray-400" size={20}/>
 
         <div className="relative">
-          <FiHeart />
-          <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
-            0
-          </div>
+          <FiHeart className="mr-2 text-gray-400" size={20}/>
         </div>
 
-        <AiOutlineAppstore />
+        <BiUser className="mr-2 text-gray-400" size={20}/>
       </div>
     </div>
   );
