@@ -21,9 +21,10 @@ const HeaderTop = () => {
   return (
     <div className="border rounded-small">
       <div className="container py-6">
-        <div className="flex justify-between items-center flex-wrap"> {/* Add flex-wrap to wrap items to the next line in mobile */}
+        <div className="flex justify-between items-center flex-wrap">
           {shortcutData.map((shortcut) => (
-            <div key={shortcut.mainShortcutId} className="text-center w-1/2 mb-4"> {/* Use w-1/2 to make it half width on small screens */}
+            <div key={shortcut.mainShortcutId} className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4">
+              {/* Adjust width based on screen size */}
               <a
                 href={shortcut.linkUrl}
                 target="_blank"
@@ -33,7 +34,8 @@ const HeaderTop = () => {
                 <img
                   src={shortcut.imageUrl}
                   alt={shortcut.title}
-                  className="w-12 h-12"  {/* Adjust the width and height of the icon */}
+                  className="w-12 h-12" 
+                  // Adjust the width and height of the icon
                 />
               </a>
               <p className="text-xs mt-1">{shortcut.title}</p>
