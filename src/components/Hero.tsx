@@ -43,7 +43,6 @@ const Hero = () => {
         </Slider>
       </div>
       <br/>
-      {/* <Navbar/> */}
     </div>
   );
 };

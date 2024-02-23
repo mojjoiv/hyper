@@ -29,7 +29,6 @@ export default function RootLayout({
         <HeaderMain />
         <MobNavbar />
         {children}
-        {/* <Navbar /> */}
         <Footer />
       </body>
     </html>
