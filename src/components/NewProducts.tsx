@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
-import SingleCard from "./SingleCard";
+// import SingleCard from "./SingleCard";
 import Navbar from "./Navbar";
 
 const NewProducts = () => {
@@ -31,7 +31,7 @@ const NewProducts = () => {
   return (
     <div>
       <Navbar/>
-      <SingleCard/>
+      {/* <SingleCard collectionData={undefined}/> */}
       <div className="container pt-16">
         <h2 className="font-medium text-2xl pb-4">New Products</h2>
 
