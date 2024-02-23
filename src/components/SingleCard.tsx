@@ -75,14 +75,12 @@ const SingleCard: React.FC<{ collectionData: CollectionData }> = ({ collectionDa
 
   return (
     <div className="max-w-sm w-full lg:max-w-full lg:flex">
-      {/* Existing code... */}
       <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-        {/* Existing code... */}
+
         <div className="flex items-center">
-          {/* Existing code... */}
+  
         </div>
       </div>
-      {/* Additional data display */}
       <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
         <Image
           src={mediaUri}

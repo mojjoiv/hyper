@@ -36,9 +36,8 @@ const Hero = () => {
         <Slider {...settings}>
           {slideData.map((item) => (
             <Slide
-              key={item.mainBannerId}
-              img={item.pcImageUrl}
-            />
+              key={(item as any).mainBannerId}
+              img={(item as any).pcImageUrl} title={""} mainTitle={""} price={""}            />
           ))}
         </Slider>
       </div>

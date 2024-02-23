@@ -23,22 +23,22 @@ const HeaderTop = () => {
       <div className="container py-6">
         <div className="flex justify-between items-center flex-wrap">
           {shortcutData.map((shortcut) => (
-            <div key={shortcut.mainShortcutId} className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4">
+            <div key={(shortcut as any).mainShortcutId} className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4">
               {/* Adjust width based on screen size */}
               <a
-                href={shortcut.linkUrl}
+                href={(shortcut as any).linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header_top__icon_wrapper"
               >
                 <img
-                  src={shortcut.imageUrl}
-                  alt={shortcut.title}
+                  src={(shortcut as any).imageUrl}
+                  alt={(shortcut as any).title}
                   className="w-12 h-12" 
                   // Adjust the width and height of the icon
                 />
               </a>
-              <p className="text-xs mt-1">{shortcut.title}</p>
+              <p className="text-xs mt-1">{(shortcut as any).title}</p>
             </div>
           ))}
         </div>

@@ -25,47 +25,22 @@ const Navbar = () => {
 
 
         {shortcutData.map((shortcut) => (
-              <div key={shortcut.mainShortcutId}>
+              <div key={(shortcut as any).mainShortcutId}>
                 <a
-                  href={shortcut.linkUrl}
+                  href={(shortcut as any).linkUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   // className="header_top__icon_wrapper"
                 >
                   <img
-                    src={shortcut.imageUrl}
-                    alt={shortcut.title}
+                    src={(shortcut as any).imageUrl}
+                    alt={(shortcut as any).title}
                     className="w-6 h-6"
                   />
                 </a>
-                <p className="text-xs mt-1">{shortcut.title}</p>
+                <p className="text-xs mt-1">{(shortcut as any).title}</p>
               </div>
             ))}
-            
-          {/* <Link className="navbar__link relative" href="#">
-            HOME
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            CATEGORIES
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            {`MEN'S`}
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            {`WOMEN'S`}
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            JEWELRY
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            PERFUME
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            BLOG
-          </Link>
-          <Link className="navbar__link relative" href="#">
-            HOT OFFERS
-          </Link> */}
         </div>
       </div>
     </div>
