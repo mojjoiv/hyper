@@ -1,4 +1,3 @@
-// import Link from "next/link";
 "use client";
 import React, { useState, useEffect } from "react";
 
@@ -30,12 +29,11 @@ const Navbar = () => {
                   href={(shortcut as any).linkUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  // className="header_top__icon_wrapper"
                 >
                   <img
                     src={(shortcut as any).imageUrl}
                     alt={(shortcut as any).title}
-                    className="w-6 h-6"
+                    className="w-16 h-16 justify-center"
                   />
                 </a>
                 <p className="text-xs mt-1">{(shortcut as any).title}</p>

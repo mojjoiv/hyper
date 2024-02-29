@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 import DealCard from "./DealCard";
 
 interface ProductType {
@@ -8,7 +9,7 @@ interface ProductType {
   title: string;
   description: string;
   rating: number;
-  priceInfo: { price: number}[];
+  priceInfo: { price: number }[];
   type: string;
   viewType: string;
   items: {
@@ -58,27 +59,34 @@ const Price = () => {
   };
 
   return (
-    <div>
-      <div className="container pt-6 lg:pt-0">
-        <Slider {...sliderSettings}>
-          {productsData.map((product) => (
-            <div key={product.id} className="product-card-container">
-              <h3>{product.title}</h3>
-              {product.items.map((item) => (
-                <DealCard
-                  key={item.uuid}
-                  img={item.publication.media[0]?.uri}
-                  title={item.publication.title}
-                  desc={item.publication.description}
-                  rating={item.publication.rating}
-                  price={item.publication.priceInfo?.price}
-                />
-              ))}
+    <div className="container pt-6 lg:pt-0">
+      <Slider {...sliderSettings}>
+        {productsData.map((product) => (
+          <div key={product.id} className="product-card-container">
+            <div className="testimonial-container">
+              <div className="testimonial-title">
+                <h2>{product.title}</h2>
+              </div>
+              <div className="testimonial-cards">
+                {product.items.map((item) => (
+                  <DealCard
+                    key={item.uuid}
+                    img={item.publication.media[0]?.uri}
+                    title={item.publication.title}
+                    desc={item.publication.description}
+                    rating={item.publication.rating}
+                    price={item.publication.priceInfo?.price}
+                  />
+                ))}
+              </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))}
+      </Slider>
       <br />
+
+
+      
     </div>
   );
 };

@@ -2,14 +2,16 @@ import Image from "next/image";
 import React from "react";
 import Place from '../app/Place.jpg';
 
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 
 interface propsType {
   img: string;
   title: string;
   desc: string;
   rating: number;
-  price: string;
+  price: number;
+  discountRate: number;
+  prefaceIconUrl: string;
 }
 
 const DealCard: React.FC<propsType> = ({
@@ -18,95 +20,43 @@ const DealCard: React.FC<propsType> = ({
   desc,
   rating,
   price,
+  discountRate,
+  prefaceIconUrl
 }) => {
-  const generateRating = (rating: number) => {
-    switch (rating) {
-      case 1:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 2:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 3:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 4:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 5:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-        );
-
-      default:
-        return null;
-    }
-  };
-
   return (
-    <div className="px-4 gap-2 rounded-xl max-w-[400px] mt-4">
+    <div style={{ padding: "8px", gap: "2px", borderRadius: "8px", maxWidth: "400px", marginTop: "4px" }}>
       <div>
-      {img ? (
-            <Image
-              className="w-full h-auto rounded"
-              src={img}
-              width={30}
-              height={30}
-              alt={title}
-              layout="responsive"
-            />
-          ) : (
-            <Image
-              className="w-full h-auto rounded"
-              src={Place}
-              alt="Default Image"
-            />
-          )}
+        {img ? (
+          <Image
+            style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+            src={img}
+            width={30}
+            height={30}
+            alt={title}
+            layout="responsive"
+          />
+        ) : (
+          <Image
+            style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+            src={Place}
+            alt="Default Image"
+          />
+        )}
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "8px", padding: "16px" }}>
+        <h2 style={{ color: "black", fontWeight: "medium", textTransform: "uppercase" }}>{title}</h2>
+        <p style={{ color: "gray", maxWidth: "150px" }}>{desc}</p>
+        <div className="flex items-center gap-2 text-gray-500 text-[20px]">
+          <AiFillStar />
+          {rating}
         </div>
-      <div className="space-y-2 py-2">
-        <h2 className="text-accent font-medium uppercase">{title}</h2>
-        <p className="text-gray-500 max-w-[150px]">{desc}</p>
-        <div>{generateRating(rating)}</div>
-
-        <div className="font-bold flex gap-4">
+        <div style={{ display: "flex", gap: "4px", fontWeight: "bold" }}>
           ${price}
-          <del className="text-gray-500 font-normal">
-            ${parseInt(price) + 50}.00
+          <del style={{ color: "gray", fontWeight: "normal" }}>
+            {discountRate}%
           </del>
+          <br />
+          {prefaceIconUrl && <Image src={prefaceIconUrl} alt="Preface Icon" style={{ width: "8px", height: "8px" }} />}
         </div>
       </div>
     </div>

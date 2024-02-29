@@ -85,9 +85,72 @@
   background-color: #fff; 
   margin: 0 5px; 
 }
+/* DealCard.css */
+.deal-card {
+  display: flex;
+  padding: 8px;
+  gap: 2px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-top: 4px;
+}
 
-/* .slick-dots li.slick-active button {
-  background-color: #000;
-} */
+.image-container {
+  flex-shrink: 0;
+}
 
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+
+.title {
+  color: black;
+  font-weight: medium;
+  text-transform: uppercase;
+}
+
+.description {
+  color: gray;
+  max-width: 150px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: gray;
+  font-size: 20px;
+}
+
+.star-icon {
+  color: gray;
+}
+
+.price-container {
+  display: flex;
+  gap: 4px;
+  font-weight: bold;
+}
+
+.price {
+  color: black;
+}
+
+.discount-price {
+  color: gray;
+  font-weight: normal;
+}
+
+.preface-icon {
+  width: 8px;
+  height: 8px;
+}

@@ -44,8 +44,7 @@ const HotDeal = () => {
                 title={(item as any).title}
                 desc={(item as any).description}
                 rating={(item as any).rating}
-                price={(item as any).installmentPrice}
-              />
+                price={(item as any).installmentPrice} prefaceIconUrl={""}              />
             </div>
           ))}
         </Slider>
