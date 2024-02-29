@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Place from '../app/Place.jpg';
+
 import { AiFillStar } from "react-icons/ai";
 
 interface propsType {
@@ -9,7 +10,7 @@ interface propsType {
   desc: string;
   rating: number;
   price: number;
-  discountRate: number;  // Added discountRate property
+  // discountRate: number;
   prefaceIconUrl: string;
 }
 
@@ -19,10 +20,10 @@ const DealCard: React.FC<propsType> = ({
   desc,
   rating,
   price,
-  discountRate,
+  // discountRate,
   prefaceIconUrl
 }) => {
-  const formattedPrice = price.toFixed(2); // Convert price to string with 2 decimal places
+  const formattedPrice = price.toFixed(2); 
 
   return (
     <div style={{ padding: "8px", gap: "2px", borderRadius: "8px", maxWidth: "400px", marginTop: "4px" }}>
@@ -54,7 +55,7 @@ const DealCard: React.FC<propsType> = ({
         <div style={{ display: "flex", gap: "4px", fontWeight: "bold" }}>
           {price}원
           <del style={{ color: "gray", fontWeight: "normal" }}>
-            {((price + price * (discountRate / 100)).toFixed(2))}원
+            {formattedPrice}원
           </del>
           <br />
           {prefaceIconUrl && <Image src={prefaceIconUrl} alt="Preface Icon" style={{ width: "8px", height: "8px" }} />}

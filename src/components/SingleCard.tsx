@@ -83,7 +83,7 @@ const SingleCard = () => {
                     desc={item.publication.description}
                     rating={item.publication.rating}
                     price={item.publication.priceInfo?.price}
-                    discountRate={item.publication.discountRate}
+                    // discountRate={item.publication.discountRate}
                     prefaceIconUrl={item.publication.media2?.[0]?.prefaceIconUrl}
                   />
                 </div>

@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 
 const Hero = () => {
   const [slideData, setSlideData] = useState([]);
+  const [sliderInitialized, setSliderInitialized] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -13,6 +14,7 @@ const Hero = () => {
         const response = await fetch("https://api.testvalley.kr/main-banner/all");
         const data = await response.json();
         setSlideData(data);
+        setSliderInitialized(true);
       } catch (error) {
         console.error("Error fetching data from the API:", error);
       }
@@ -21,7 +23,7 @@ const Hero = () => {
     fetchData();
   }, []);
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -33,17 +35,19 @@ const Hero = () => {
   return (
     <div>
       <div className="container pt-6 lg:pt-0">
-        <Slider {...settings}>
-          {slideData.map((item) => (
-            <Slide
-              key={(item as any).mainBannerId}
-              img={(item as any).pcImageUrl}
-              title={""}
-              mainTitle={""}
-              price={""}
-            />
-          ))}
-        </Slider>
+        {sliderInitialized && slideData.length > 0 && (
+          <Slider {...settings}>
+            {slideData.map((item) => (
+              <Slide
+                key={(item as any).mainBannerId}
+                img={(item as any).pcImageUrl}
+                title={""}
+                mainTitle={""}
+                price={""}
+              />
+            ))}
+          </Slider>
+        )}
       </div>
       <br />
     </div>
