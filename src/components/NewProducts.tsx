@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import Navbar from "./Navbar";
 import SingleCard from "./SingleCard";
-import Price from './Price'
+// import Price from './Price'
 
 interface ProductType {
   id: string;
