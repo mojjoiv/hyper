@@ -23,6 +23,14 @@ const DealCard: React.FC<propsType> = ({
   discountRate,
   prefaceIconUrl
 }) => {
+  const formattedPrice = price.toFixed(2); // Convert price to string with 2 decimal places
+
+  // Check if discountRate is a valid number
+  const isValidDiscountRate = !isNaN(discountRate) && discountRate >= 0 && discountRate <= 100;
+
+  // Calculate discounted price only if discountRate is valid
+  const discountedPrice = isValidDiscountRate ? (price - price * (discountRate / 100)).toFixed(2) : null;
+
   return (
     <div style={{ padding: "8px", gap: "2px", borderRadius: "8px", maxWidth: "400px", marginTop: "4px" }}>
       <div>
@@ -51,10 +59,18 @@ const DealCard: React.FC<propsType> = ({
           {rating}
         </div>
         <div style={{ display: "flex", gap: "4px", fontWeight: "bold" }}>
-          ${price}
-          <del style={{ color: "gray", fontWeight: "normal" }}>
-            {discountRate}%
-          </del>
+          {price}원
+          {isValidDiscountRate && (
+            <>
+              <del style={{ color: "gray", fontWeight: "normal" }}>
+                {formattedPrice}원
+              </del>
+              <br />
+              Discounted Price: {discountedPrice}원
+              <br />
+              Discount Rate: {discountRate}%
+            </>
+          )}
           <br />
           {prefaceIconUrl && <Image src={prefaceIconUrl} alt="Preface Icon" style={{ width: "8px", height: "8px" }} />}
         </div>
