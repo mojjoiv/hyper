@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Slide from "./Slide";
@@ -30,6 +29,7 @@ const Hero = () => {
     autoplay: true,
     pauseOnHover: false,
   };
+
   return (
     <div>
       <div className="container pt-6 lg:pt-0">
@@ -37,11 +37,15 @@ const Hero = () => {
           {slideData.map((item) => (
             <Slide
               key={(item as any).mainBannerId}
-              img={(item as any).pcImageUrl} title={""} mainTitle={""} price={""}            />
+              img={(item as any).pcImageUrl}
+              title={""}
+              mainTitle={""}
+              price={""}
+            />
           ))}
         </Slider>
       </div>
-      <br/>
+      <br />
     </div>
   );
 };

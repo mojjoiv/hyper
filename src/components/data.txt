@@ -1,0 +1,315 @@
+{
+      "id": 2431,
+      "type": "SINGLE",
+      "code": "SI2402CMVqXWxOXc",
+      "title": "성능보장, PC주변기기 & 스피커 추천",
+      "subtitle": "#LG #앱코 #BOSE",
+      "description": "",
+      "trialPeriod": null,
+      "installmentPrice": null,
+      "installmentPeriod": null,
+      "rating": 0,
+      "startDate": null,
+      "endDate": null,
+      "viewType": "TILE",
+      "createdAt": "2024-02-15T06:20:56.111Z",
+      "items": [
+        {
+          "createdAt": "2024-02-15T07:04:56.256Z",
+          "updatedAt": "2024-02-15T07:04:56.256Z",
+          "deletedAt": null,
+          "uuid": "3d0f8ad0-e66c-4ba5-8c83-53fd84ccc2bd",
+          "name": "SI-PU-7304#1",
+          "body": null,
+          "collectionId": 2431,
+          "key": "SI-PU-7304#1",
+          "seq": 0,
+          "entityType": "PUBLICATION",
+          "entityId": 7304,
+          "optionKey": null,
+          "publication": {
+            "id": 7304,
+            "title": "LG 32UP830 32인치 4K모니터 IPS패널 HDR 스피커내장 USB C타입 지원 콘솔게임용추천 신모델 출시 (32UN650 후속)",
+            "code": "P006132033S012700001",
+            "productId": 4868,
+            "prdType": 1,
+            "detailEntity": "MEDIA",
+            "content": "",
+            "offeringType": "publication",
+            "rating": 4.4,
+            "isExistResidual": true,
+            "isAdult": 1,
+            "preface": "16시이전 당일출고",
+            "prefaceIconUrl": "https://prod-testvalley.s3.ap-northeast-2.amazonaws.com/static/preface_icon/delivery.png",
+            "productName": "32UP830",
+            "brandName": "LG전자",
+            "media": [
+              {
+                "seq": 0,
+                "type": "THUMBNAIL",
+                "uri": "https://dvd6ljcj7w3pj.cloudfront.net/media/PUBLICATION/380ac41e-c81b-43eb-b2a1-437eb1a319eb.jpeg",
+                "mimeType": "image/jpeg",
+                "deviceType": null
+              }
+            ],
+            "isTrial": true,
+            "tagsOnImage": [
+              "리턴가능"
+            ],
+            "tagsOnDesc": [
+              "쿠폰"
+            ],
+            "priceInfo": {
+              "price": 599000,
+              "couponDiscountPrice": 589900,
+              "couponDiscountRate": 2
+            },
+            "discounts": [
+              
+            ],
+            "applyCoupon": true
+          },
+          "prdType": 1
+        },
+        {
+          "createdAt": "2024-02-15T07:04:56.260Z",
+          "updatedAt": "2024-02-15T07:04:56.260Z",
+          "deletedAt": null,
+          "uuid": "3e792f96-8966-4eeb-b5d2-1cb9bdb4a350",
+          "name": "SI-PU-6465#2",
+          "body": null,
+          "collectionId": 2431,
+          "key": "SI-PU-6465#2",
+          "seq": 1,
+          "entityType": "PUBLICATION",
+          "entityId": 6465,
+          "optionKey": null,
+          "publication": {
+            "id": 6465,
+            "title": "앱코 K841 조약돌 레트로 축교환 기계식 갈축",
+            "code": "P099133009S012800001",
+            "productId": 4409,
+            "prdType": 1,
+            "detailEntity": "MEDIA",
+            "offeringType": "publication",
+            "rating": 5,
+            "isExistResidual": true,
+            "isAdult": 1,
+            "preface": "",
+            "prefaceIconUrl": "",
+            "productName": "앱코 K841 조약돌 레트로 축교환 기계식 갈축",
+            "brandName": "앱코",
+            "media": [
+              {
+                "seq": 0,
+                "type": "THUMBNAIL",
+                "uri": "https://dvd6ljcj7w3pj.cloudfront.net/media/PUBLICATION/3dd51be4-9cec-447a-9150-f0d9643d845d.jpeg",
+                "mimeType": "image/jpeg",
+                "deviceType": null
+              }
+            ],
+            "isTrial": true,
+            "tagsOnImage": [
+              "리턴가능"
+            ],
+            "tagsOnDesc": [
+              
+            ],
+            "priceInfo": {
+              "price": 39900,
+              "discountPrice": 37742,
+              "discountRate": 6
+            },
+            "discounts": [
+              {
+                "id": 13829,
+                "name": null,
+                "type": "INIT",
+                "calcMethod": "AMOUNT",
+                "value": 2158,
+                "activeFrom": null,
+                "activeTo": null,
+                "qty": 0,
+                "remain": null
+              }
+            ],
+            "applyCoupon": true
+          },
+          "prdType": 1
+        },
+        {
+          "createdAt": "2024-02-15T07:04:56.264Z",
+          "updatedAt": "2024-02-15T07:04:56.264Z",
+          "deletedAt": null,
+          "uuid": "d18cebed-daf9-4444-8e84-ebdfb696cac9",
+          "name": "SI-PU-492#3",
+          "body": null,
+          "collectionId": 2431,
+          "key": "SI-PU-492#3",
+          "seq": 2,
+          "entityType": "PUBLICATION",
+          "entityId": 492,
+          "optionKey": null,
+          "publication": {
+            "id": 492,
+            "title": "BOSE 사운드링크 미니2 SE",
+            "code": "P022013651S000800492",
+            "productId": 651,
+            "prdType": 1,
+            "detailEntity": "MEDIA",
+            "content": "",
+            "offeringType": "publication",
+            "rating": 4.5,
+            "isExistResidual": true,
+            "isAdult": 1,
+            "preface": null,
+            "prefaceIconUrl": null,
+            "productName": "사운드링크 미니2 SE 블루투스 스피커 ",
+            "brandName": "보스",
+            "media": [
+              {
+                "seq": 0,
+                "type": "THUMBNAIL",
+                "uri": "https://dvd6ljcj7w3pj.cloudfront.net/media/PUBLICATION/6a52ce79-7482-45c5-b80f-d27c4bfb374d.jpeg",
+                "mimeType": "image/jpeg",
+                "deviceType": null
+              }
+            ],
+            "isTrial": true,
+            "tagsOnImage": [
+              "리턴가능"
+            ],
+            "tagsOnDesc": [
+              
+            ],
+            "priceInfo": {
+              "price": 239000
+            },
+            "discounts": [
+              
+            ],
+            "applyCoupon": true
+          },
+          "prdType": 1
+        },
+        {
+          "createdAt": "2024-02-15T07:04:56.267Z",
+          "updatedAt": "2024-02-15T07:04:56.267Z",
+          "deletedAt": null,
+          "uuid": "fb04c525-4fc4-4707-8e0c-0c138bc3fe4f",
+          "name": "SI-PU-8280#4",
+          "body": null,
+          "collectionId": 2431,
+          "key": "SI-PU-8280#4",
+          "seq": 3,
+          "entityType": "PUBLICATION",
+          "entityId": 8280,
+          "optionKey": null,
+          "publication": {
+            "id": 8280,
+            "title": "BOSE 정품 QC 울트라 헤드폰 노이즈캔슬링 블루투스 헤드폰",
+            "code": "P022157002S000800001",
+            "productId": 5415,
+            "prdType": 1,
+            "detailEntity": "MEDIA",
+            "content": "",
+            "offeringType": "publication",
+            "rating": 4.5,
+            "isExistResidual": true,
+            "isAdult": 1,
+            "preface": "",
+            "prefaceIconUrl": "",
+            "productName": "보스 정품 QC 울트라 헤드폰 노이즈캔슬링 블루투스 헤드폰",
+            "brandName": "보스",
+            "media": [
+              {
+                "seq": 0,
+                "type": "THUMBNAIL",
+                "uri": "https://dvd6ljcj7w3pj.cloudfront.net/media/PUBLICATION/03a8c6a2-6616-4577-996c-29f3b579fbbb.jpeg",
+                "mimeType": "image/jpeg",
+                "deviceType": null
+              }
+            ],
+            "isTrial": true,
+            "tagsOnImage": [
+              "리턴가능"
+            ],
+            "tagsOnDesc": [
+              
+            ],
+            "priceInfo": {
+              "price": 499000
+            },
+            "discounts": [
+              
+            ],
+            "applyCoupon": true
+          },
+          "prdType": 1
+        },
+        {
+          "createdAt": "2024-02-15T07:04:56.271Z",
+          "updatedAt": "2024-02-15T07:04:56.271Z",
+          "deletedAt": null,
+          "uuid": "98d0da68-63f6-4197-b1bd-2d5bb80c8060",
+          "name": "SI-PU-2340#5",
+          "body": null,
+          "collectionId": 2431,
+          "key": "SI-PU-2340#5",
+          "seq": 4,
+          "entityType": "PUBLICATION",
+          "entityId": 2340,
+          "optionKey": null,
+          "publication": {
+            "id": 2340,
+            "title": "지군 2.1CH 우퍼스피커 GSP-270",
+            "code": "P088155002S005000001",
+            "productId": 1637,
+            "prdType": 1,
+            "detailEntity": "MEDIA",
+            "offeringType": "publication",
+            "rating": 5,
+            "isExistResidual": true,
+            "isAdult": 1,
+            "preface": null,
+            "prefaceIconUrl": null,
+            "productName": "지군 2.1CH 우퍼스피커 GSP-270",
+            "brandName": "지군",
+            "media": [
+              {
+                "seq": 0,
+                "type": "THUMBNAIL",
+                "uri": "https://dvd6ljcj7w3pj.cloudfront.net/media/PUBLICATION/67a7cadb-c316-45f2-b4d2-f9aa436f97c2.jpeg",
+                "mimeType": "image/jpeg",
+                "deviceType": null
+              }
+            ],
+            "isTrial": true,
+            "tagsOnImage": [
+              "리턴가능"
+            ],
+            "tagsOnDesc": [
+              "쿠폰"
+            ],
+            "priceInfo": {
+              "price": 21400,
+              "couponDiscountPrice": 19688,
+              "couponDiscountRate": 8
+            },
+            "discounts": [
+              
+            ],
+            "applyCoupon": true
+          },
+          "prdType": 1
+        }
+      ],
+      "media": [
+        
+      ],
+      "taggings": [
+        
+      ],
+      "singleCollections": [
+        
+      ]

@@ -24,7 +24,6 @@ const HeaderTop = () => {
         <div className="flex justify-between items-center flex-wrap">
           {shortcutData.map((shortcut) => (
             <div key={(shortcut as any).mainShortcutId} className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4">
-              {/* Adjust width based on screen size */}
               <a
                 href={(shortcut as any).linkUrl}
                 target="_blank"
@@ -35,7 +34,6 @@ const HeaderTop = () => {
                   src={(shortcut as any).imageUrl}
                   alt={(shortcut as any).title}
                   className="w-12 h-12" 
-                  // Adjust the width and height of the icon
                 />
               </a>
               <p className="text-xs mt-1">{(shortcut as any).title}</p>
@@ -48,3 +46,4 @@ const HeaderTop = () => {
 };
 
 export default HeaderTop;
+// 구매할지 말지 고민 중이라면
